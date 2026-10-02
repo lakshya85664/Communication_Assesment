@@ -1,11 +1,5 @@
 # Topic 16 — Implement Communication
 
-## Project
-
-**Project:** Communication Assessment  
-**Topic:** 16 — Implement Communication  
-**Location:** `E:\Tayana_Projects\AI_Agent_Architecture\Communication_Assessment`
-
 ## Objective
 
 This project implements a deterministic communication layer for AI-agent workflows. It provides structured message creation and validation, recipient-based routing, acknowledgements, dead-letter handling, and correlation-based operational tracing.
