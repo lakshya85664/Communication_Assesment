@@ -1,0 +1,25 @@
+{
+  "step_count": 2,
+  "max_steps": 20,
+  "events": [
+    {
+      "step": 1,
+      "event": "message_created",
+      "correlation_id": "633b834f-f339-464f-ab3d-41fb21818f71",
+      "details": {
+        "message_id": "0ba07d8f-8102-4209-91ea-88ad4dbf710c",
+        "sender": "planner",
+        "recipient": "executor",
+        "kind": "task"
+      }
+    },
+    {
+      "step": 2,
+      "event": "message_validated",
+      "correlation_id": "633b834f-f339-464f-ab3d-41fb21818f71",
+      "details": {
+        "message_id": "0ba07d8f-8102-4209-91ea-88ad4dbf710c"
+      }
+    }
+  ]
+}

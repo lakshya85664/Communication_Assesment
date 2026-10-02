@@ -1,0 +1,80 @@
+{
+  "step_count": 8,
+  "max_steps": 20,
+  "events": [
+    {
+      "step": 1,
+      "event": "route_registered",
+      "correlation_id": null,
+      "details": {
+        "recipient": "executor"
+      }
+    },
+    {
+      "step": 2,
+      "event": "message_created",
+      "correlation_id": "2e070a8f-b7d8-4bf0-9bf3-4a835491cf63",
+      "details": {
+        "message_id": "ff6361c4-442e-4a46-9afe-82217fbc2edf",
+        "sender": "planner",
+        "recipient": "executor",
+        "kind": "task"
+      }
+    },
+    {
+      "step": 3,
+      "event": "message_validated",
+      "correlation_id": "2e070a8f-b7d8-4bf0-9bf3-4a835491cf63",
+      "details": {
+        "message_id": "ff6361c4-442e-4a46-9afe-82217fbc2edf"
+      }
+    },
+    {
+      "step": 4,
+      "event": "message_routed",
+      "correlation_id": "2e070a8f-b7d8-4bf0-9bf3-4a835491cf63",
+      "details": {
+        "message_id": "ff6361c4-442e-4a46-9afe-82217fbc2edf",
+        "recipient": "executor"
+      }
+    },
+    {
+      "step": 5,
+      "event": "message_validated",
+      "correlation_id": "2e070a8f-b7d8-4bf0-9bf3-4a835491cf63",
+      "details": {
+        "message_id": "ff6361c4-442e-4a46-9afe-82217fbc2edf"
+      }
+    },
+    {
+      "step": 6,
+      "event": "message_acknowledged",
+      "correlation_id": "2e070a8f-b7d8-4bf0-9bf3-4a835491cf63",
+      "details": {
+        "message_id": "ff6361c4-442e-4a46-9afe-82217fbc2edf",
+        "ack_message_id": "5bec0e39-2e56-40a7-b2c0-34111de71b5c",
+        "receiver": "executor"
+      }
+    },
+    {
+      "step": 7,
+      "event": "message_created",
+      "correlation_id": "2e070a8f-b7d8-4bf0-9bf3-4a835491cf63",
+      "details": {
+        "message_id": "4805ef5b-af95-4fb0-89c5-07f89feee721",
+        "sender": "executor",
+        "recipient": "planner",
+        "kind": "result"
+      }
+    },
+    {
+      "step": 8,
+      "event": "correlation_trace_computed",
+      "correlation_id": "2e070a8f-b7d8-4bf0-9bf3-4a835491cf63",
+      "details": {
+        "message_count": 2,
+        "event_count": 6
+      }
+    }
+  ]
+}

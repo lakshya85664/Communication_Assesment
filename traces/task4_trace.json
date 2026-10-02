@@ -1,0 +1,78 @@
+{
+  "step_count": 8,
+  "max_steps": 20,
+  "events": [
+    {
+      "step": 1,
+      "event": "message_created",
+      "correlation_id": "60fe49a5-10f0-4aca-9490-d93a12173ce3",
+      "details": {
+        "message_id": "7e91e23c-1f33-43e0-92e6-a4580027127c",
+        "sender": "planner",
+        "recipient": "unavailable_worker",
+        "kind": "task"
+      }
+    },
+    {
+      "step": 2,
+      "event": "message_validated",
+      "correlation_id": "60fe49a5-10f0-4aca-9490-d93a12173ce3",
+      "details": {
+        "message_id": "7e91e23c-1f33-43e0-92e6-a4580027127c"
+      }
+    },
+    {
+      "step": 3,
+      "event": "message_dead_lettered",
+      "correlation_id": "60fe49a5-10f0-4aca-9490-d93a12173ce3",
+      "details": {
+        "message_id": "7e91e23c-1f33-43e0-92e6-a4580027127c",
+        "failure_type": "transient",
+        "retryable": true
+      }
+    },
+    {
+      "step": 4,
+      "event": "message_created",
+      "correlation_id": "98701319-c67b-4625-97d9-3a44629981a4",
+      "details": {
+        "message_id": "a087e448-2b11-48b1-b3b1-8c4b9c961c44",
+        "sender": "planner",
+        "recipient": "invalid_worker",
+        "kind": "task"
+      }
+    },
+    {
+      "step": 5,
+      "event": "message_validated",
+      "correlation_id": "98701319-c67b-4625-97d9-3a44629981a4",
+      "details": {
+        "message_id": "a087e448-2b11-48b1-b3b1-8c4b9c961c44"
+      }
+    },
+    {
+      "step": 6,
+      "event": "message_dead_lettered",
+      "correlation_id": "98701319-c67b-4625-97d9-3a44629981a4",
+      "details": {
+        "message_id": "a087e448-2b11-48b1-b3b1-8c4b9c961c44",
+        "failure_type": "validation",
+        "retryable": false
+      }
+    },
+    {
+      "step": 7,
+      "event": "message_validated",
+      "correlation_id": "60fe49a5-10f0-4aca-9490-d93a12173ce3",
+      "details": {
+        "message_id": "7e91e23c-1f33-43e0-92e6-a4580027127c"
+      }
+    },
+    {
+      "step": 8,
+      "event": "dead_letter_retrieved",
+      "correlation_id": "60fe49a5-10f0-4aca-9490-d93a12173ce3",
+      "details": {}
+    }
+  ]
+}

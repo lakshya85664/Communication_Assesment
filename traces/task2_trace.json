@@ -1,0 +1,71 @@
+{
+  "step_count": 7,
+  "max_steps": 20,
+  "events": [
+    {
+      "step": 1,
+      "event": "route_registered",
+      "correlation_id": null,
+      "details": {
+        "recipient": "executor"
+      }
+    },
+    {
+      "step": 2,
+      "event": "message_created",
+      "correlation_id": "782b25fa-1afd-49a5-97a3-0f213e57e8a9",
+      "details": {
+        "message_id": "7b8aaa72-6530-4c63-99b0-c756fee08b31",
+        "sender": "planner",
+        "recipient": "executor",
+        "kind": "task"
+      }
+    },
+    {
+      "step": 3,
+      "event": "message_validated",
+      "correlation_id": "782b25fa-1afd-49a5-97a3-0f213e57e8a9",
+      "details": {
+        "message_id": "7b8aaa72-6530-4c63-99b0-c756fee08b31"
+      }
+    },
+    {
+      "step": 4,
+      "event": "message_routed",
+      "correlation_id": "782b25fa-1afd-49a5-97a3-0f213e57e8a9",
+      "details": {
+        "message_id": "7b8aaa72-6530-4c63-99b0-c756fee08b31",
+        "recipient": "executor"
+      }
+    },
+    {
+      "step": 5,
+      "event": "message_created",
+      "correlation_id": "13b632b2-dccc-4fc0-b822-74e1c1e752fd",
+      "details": {
+        "message_id": "94112a54-fc8b-4a76-921b-921add850445",
+        "sender": "planner",
+        "recipient": "unknown_agent",
+        "kind": "task"
+      }
+    },
+    {
+      "step": 6,
+      "event": "message_validated",
+      "correlation_id": "13b632b2-dccc-4fc0-b822-74e1c1e752fd",
+      "details": {
+        "message_id": "94112a54-fc8b-4a76-921b-921add850445"
+      }
+    },
+    {
+      "step": 7,
+      "event": "route_rejected",
+      "correlation_id": "13b632b2-dccc-4fc0-b822-74e1c1e752fd",
+      "details": {
+        "message_id": "94112a54-fc8b-4a76-921b-921add850445",
+        "recipient": "unknown_agent",
+        "reason": "route_not_found"
+      }
+    }
+  ]
+}

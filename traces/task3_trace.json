@@ -1,0 +1,62 @@
+{
+  "step_count": 6,
+  "max_steps": 20,
+  "events": [
+    {
+      "step": 1,
+      "event": "message_created",
+      "correlation_id": "299878aa-f2d1-48bc-a69a-e6e8e28b0a0e",
+      "details": {
+        "message_id": "bd621c62-68ed-45c6-ba3f-f74a390c5ac7",
+        "sender": "planner",
+        "recipient": "executor",
+        "kind": "task"
+      }
+    },
+    {
+      "step": 2,
+      "event": "message_validated",
+      "correlation_id": "299878aa-f2d1-48bc-a69a-e6e8e28b0a0e",
+      "details": {
+        "message_id": "bd621c62-68ed-45c6-ba3f-f74a390c5ac7"
+      }
+    },
+    {
+      "step": 3,
+      "event": "message_acknowledged",
+      "correlation_id": "299878aa-f2d1-48bc-a69a-e6e8e28b0a0e",
+      "details": {
+        "message_id": "bd621c62-68ed-45c6-ba3f-f74a390c5ac7",
+        "ack_message_id": "dbaf40ba-7c0c-491b-a9c9-14903f822854",
+        "receiver": "executor"
+      }
+    },
+    {
+      "step": 4,
+      "event": "message_validated",
+      "correlation_id": "299878aa-f2d1-48bc-a69a-e6e8e28b0a0e",
+      "details": {
+        "message_id": "bd621c62-68ed-45c6-ba3f-f74a390c5ac7"
+      }
+    },
+    {
+      "step": 5,
+      "event": "message_created",
+      "correlation_id": "7849e2ef-bb0b-4b8d-9aae-1d45a9b0b88b",
+      "details": {
+        "message_id": "e22b43c7-6325-486c-b257-0223119c9924",
+        "sender": "planner",
+        "recipient": "executor",
+        "kind": "task"
+      }
+    },
+    {
+      "step": 6,
+      "event": "message_validated",
+      "correlation_id": "7849e2ef-bb0b-4b8d-9aae-1d45a9b0b88b",
+      "details": {
+        "message_id": "e22b43c7-6325-486c-b257-0223119c9924"
+      }
+    }
+  ]
+}
